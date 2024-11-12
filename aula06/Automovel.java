@@ -37,10 +37,18 @@ public class Automovel{
     public void setCilindrada(int cilindrada){
         this.cilindrada = cilindrada;
     }
-
+    //toString
     @Override
     public String toString(){
-        return "Automovel com matricula "+this.matricula+"  e' um "+this.marca+"  e tem cilindrada de "+this.cilindrada+" cc.";
-        
+        return "Automovel com matricula "+this.matricula+"  e' um "+this.marca+"  e tem cilindrada de "+this.cilindrada+" cc."; 
+    }
+    public static void diffCilindrada(int umaCilindrada,int outraCilindrada){
+        int diferenca;
+        if(umaCilindrada >= outraCilindrada){
+            diferenca = umaCilindrada - outraCilindrada;
+        }else{
+            diferenca = outraCilindrada - umaCilindrada;
+        }
+        System.out.println("A diferenca da cilindrada dos 2 automoveis e' de: "+diferenca);
     }
 }
