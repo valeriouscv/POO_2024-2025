@@ -47,6 +47,14 @@ public class Data{
         this.dia=dia;
     }
 
+    //metodo
+    public void imprimirData(){
+        int nhaAno = this.ano % 100;
+        String aa = (nhaAno>9)?""+nhaAno:"0"+nhaAno;
+        String mm = (this.mes>9)?""+this.mes:"0"+this.mes;
+        String dd = (this.dia>9)?""+this.dia:"0"+this.dia;
+        System.out.println(aa+"/"+mm+"/"+dd);
+    }
     //toString
     @Override
     public String toString() {
